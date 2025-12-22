@@ -1,30 +1,47 @@
+import { Link } from "react-router-dom";
+import MelkhemystLogo from "../../images/MelkhemystLogo.png";
+
 export default function Footer() {
-    return (
-      <footer className="w-full px-6 py-10 border-t border-white/10 bg-obsidian text-white/60 text-sm">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
-          {/* Left */}
-          <div>
-            <p className="font-serif text-white mb-2">Melkhemyst</p>
-            <p className="max-w-md">
-              Intuitive energy work for emotional clarity, relationship insight,
-              and personal transformation.
-            </p>
-          </div>
-  
-          {/* Right */}
-          <div className="text-xs space-y-2">
-            <p>
-              © {new Date().getFullYear()} Melkhemyst
-            </p>
-            <p>
-              Energetic and intuitive guidance only.  
-              Not a substitute for medical, legal, or psychological care.
-            </p>
-            <p>
-              All sessions are client-led and responsibility remains with the individual.
-            </p>
-          </div>
+  return (
+    <footer id="site-footer">
+      <div className="footer-inner">
+
+        {/* Sigil */}
+        <div className="footer-sigil">
+          <img
+            src={MelkhemystLogo}
+            alt="Melkhemyst sigil"
+          />
         </div>
-      </footer>
-    );
-  }
+
+        {/* Brand Statement */}
+        <p className="footer-statement">
+          Melkhemyst is an intuitive, energetic practice offering soul-level
+          guidance, emotional clarity, and grounded transformation.
+        </p>
+
+        {/* Navigation */}
+        <nav className="footer-nav">
+          <Link to="/about">About</Link>
+          <Link to="/offerings">Offerings</Link>
+          <Link to="/tools">Tools</Link>
+          <Link to="/booking">Booking</Link>
+          <Link to="/legal">Legal</Link>
+        </nav>
+
+        {/* Disclaimer */}
+        <p className="footer-disclaimer">
+          This website offers intuitive and spiritual services.
+          It does not provide medical, psychological, or legal advice.
+          Sessions are not a substitute for professional care.
+        </p>
+
+        {/* Copyright */}
+        <p className="footer-copy">
+          © {new Date().getFullYear()} Melkhemyst. All rights reserved.
+        </p>
+
+      </div>
+    </footer>
+  );
+}

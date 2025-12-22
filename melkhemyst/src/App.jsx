@@ -6,14 +6,14 @@ import Tools from "./pages/Tools";
 import Booking from "./pages/Booking";
 import Legal from "./pages/Legal";
 import Navbar from "./components/layouts/Navbar";
-import Footer from "./components/layouts/Footer";
+import Footer from "./components/layouts/footer";
 
 export default function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col bg-obsidian">
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow pt-20">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
