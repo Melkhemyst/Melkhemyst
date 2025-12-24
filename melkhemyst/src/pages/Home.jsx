@@ -17,7 +17,13 @@ export default function Home() {
               Pause for a moment.
             </p>
 
-            <div className="breath-circle" aria-hidden="true"></div>
+            <div className="breath-circle" aria-hidden="true">
+              <img
+                src="/src/images/MelkhemystLogo.png"
+                alt="Melkhemyst sigil"
+                className="breath-logo"
+              />
+            </div>
 
             <p className="breath-instruction">
               Inhale slowly.

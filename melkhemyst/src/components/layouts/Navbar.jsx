@@ -1,8 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
+import "../../styles/Navbar.css";
 
 export default function Navbar() {
   return (
-    <header id="site-header">
+    <header id="site-nav">
       <div className="nav-inner">
 
         {/* Brand */}
@@ -15,7 +16,7 @@ export default function Navbar() {
           <NavLink to="/about">About</NavLink>
           <NavLink to="/offerings">Offerings</NavLink>
           <NavLink to="/tools">Tools</NavLink>
-          <NavLink to="/booking" className="nav-cta">
+          <NavLink to="/booking" className="cta">
             Book
           </NavLink>
         </nav>
